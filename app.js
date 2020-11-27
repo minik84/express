@@ -17,6 +17,7 @@ var newsRouter = require('./routes/news');
 var quizRouter = require('./routes/quiz');
 var adminRouter = require('./routes/admin');
 var indexRouter = require('./routes/index');
+var apiRouter = require('./routes/api');
 
 var app = express();
 
@@ -45,6 +46,7 @@ app.use('/', indexRouter);
 app.use('/news', newsRouter);
 app.use('/quiz', quizRouter);
 app.use('/admin', adminRouter);
+app.use('/api', apiRouter)
 
 
 // catch 404 and forward to error handler
